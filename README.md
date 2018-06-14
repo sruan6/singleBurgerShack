@@ -1,0 +1,2 @@
+# singleBurgerShack
+single page
