@@ -8,25 +8,22 @@ class Nav extends Component {
 		super(props);
 		this.state = {
 			myopen : '<i className="fas fa-bars"></i>',
-			closethis: "collapse navbar-collapse"
 		}
 		this.handleOpen = this.handleOpen.bind(this);
-		this.doSomething = this.doSomething.bind(this)
+		this.handleclose = this.handleclose.bind(this)
 	}
 	handleOpen() {
-		this.setState({ myopen: !this.state.myopen });
-		this.setState({ closethis: "navbar-collapse collapse show" });
+	this.setState({ myopen: !this.state.myopen });
 	}
-	doSomething() {
-		this.setState({ myopen: !this.state.myopen });
-		this.setState({ closethis: "navbar-collapse collapse" });
+	handleclose() {
+		document.getElementById('primaryButton').click()
 	}
 	render() {
 		return (
 				<div>
 					<nav className="navbar navbar-expand-lg navbar-light">
 					  <a className="navbar-brand logo" href="#"><img src="/image/Burger_Shack_Logo.jpg" alt="logo" /></a>
-					  <button className="navbar-toggles" onClick={this.handleOpen} type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					  <button className="navbar-toggler" id="primaryButton" onClick={this.handleOpen} type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					  <ReactCSSTransitionGroup
 				          transitionName="example"
 				          transitionEnterTimeout={100}
@@ -36,11 +33,11 @@ class Nav extends Component {
 					   </ReactCSSTransitionGroup>
 					   	</button>
 
-					  <div className={this.state.closethis} id="navbarNavAltMarkup">
+					  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					    <div className="navbar-nav">
-					      <a onClick={this.doSomething} className="nav-item nav-link" href="#Home">Home</a>
-					      <a onClick={this.doSomething} className="nav-item nav-link" href="#Menu">Menu</a>
-					      <a onClick={this.doSomething} className="nav-item nav-link" href="#Location">Location</a>
+					      <a onClick={this.handleclose} className="nav-item nav-link" href="#Home">Home</a>
+					      <a onClick={this.handleclose} className="nav-item nav-link" href="#Menu">Menu</a>
+					      <a onClick={this.handleclose} className="nav-item nav-link" href="#Location">Location</a>
 					    </div>
 					  </div>
 					</nav>
