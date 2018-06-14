@@ -14,7 +14,9 @@ class Location extends Component {
 	}
 	render() {
 		return (
-			<div className='location' id="Location">
+			<div>
+			<span className="topAnchor" id="Location"></span>
+			<div className='location'>
 			<div className='row'>
 				<div className='col-md-12 col-12'>
 					<h2 className='d-flex justify-content-center title'>Location</h2>
@@ -57,6 +59,7 @@ class Location extends Component {
 					</div>
 					</div>
 				</div>	
+			</div>
 			</div>
 			</div>
 		);

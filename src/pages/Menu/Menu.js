@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Menu extends Component {
 	render() {
 		return(
-			<div className='menu' id="Menu">
+			<div>
+			<span  className="topAnchor" id="Menu"></span>
+			<div className='menu'>
 				<h1>MENU</h1>
 				<div className='row'>
 
@@ -182,7 +184,8 @@ class Menu extends Component {
 					<div className='col-lg-1 col-md-1 col'></div>
 
 				</div> 
-			</div> 
+			</div>
+			</div>
 		);
 	}
 };

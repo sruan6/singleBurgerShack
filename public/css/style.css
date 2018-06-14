@@ -25,6 +25,12 @@ body {
   padding: 0px;
   margin: 0px;
 }
+.topAnchor {
+  display: block;
+  height: 60px; /*same height as header*/
+  margin-top: -60px; /*same height as header*/
+  visibility: hidden;
+}
 /*Navbar*/
 .navbar {
   position: fixed !important;

@@ -85,11 +85,9 @@ navbarEvent = ()=> {
           transitionLeave={false}>
           {this.state.navbarEvent ? <Nav/> :null }
         </ReactCSSTransitionGroup>
-        <div>
           <Home />
           <Menu />
           <Location />
-        </div>
       </div>
     );
   }
