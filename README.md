@@ -1,2 +1,2 @@
-# singleBurgerShack
-single page
+# burgershack
+burger-shack_webpage
