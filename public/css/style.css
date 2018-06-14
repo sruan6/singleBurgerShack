@@ -87,6 +87,7 @@ body {
   color: white;
   padding:30px;
   text-align: center;
+  margin: 0px;
 }
 .sectionTitle {
   background: gray ;
@@ -120,6 +121,9 @@ body {
 }
 
 /*Location Page*/
+.location {
+  background: gray;
+}
 .location img {
   width: 100%;
   min-height:100vh;

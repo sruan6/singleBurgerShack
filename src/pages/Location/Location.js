@@ -19,7 +19,7 @@ class Location extends Component {
 			<div className='location'>
 			<div className='row'>
 				<div className='col-md-12 col-12'>
-					<h2 className='d-flex justify-content-center title'>Location</h2>
+					<h1 className='d-flex justify-content-center title'>Location</h1>
 
 					<div className='container'>
 					<div className='row'>
@@ -31,11 +31,9 @@ class Location extends Component {
 										<br/>
 									CA, 94133
 									<br />
-										<button  className='btn btn-primary direction' onClick={this.mapsSelector}><a target='_blank'>Get Direction</a></button>
+										<button  className='btn btn-primary direction' onClick={this.mapsSelector}><a target='_blank'>Direction</a></button>
 									</p>
 
-								<h3 className='subTitle'>Contact</h3>
-								<p className='number'><a  className='telePhone' href='tel:+1-415-523-6818'>(415)523-6818</a></p>
 							</div>
 
 							<div className='col-md-6 col-12'>
@@ -56,7 +54,16 @@ class Location extends Component {
 									Sun. 11:00 AM – 9:00 PM
 								</p>
 							</div>
+
 					</div>
+
+					<div className='row'>
+						<div className='col-12'>
+							<h1 className='subTitle'>Contact</h1>
+								<p className='number'><a  className='telePhone' href='tel:+1-415-523-6818'>(415)523-6818</a></p>
+						</div>
+					</div>
+
 					</div>
 				</div>	
 			</div>
