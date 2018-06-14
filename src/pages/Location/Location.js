@@ -17,6 +17,7 @@ class Location extends Component {
 			<div>
 			<span className="topAnchor" id="Location"></span>
 			<div className='location'>
+			<h1>LOCATION</h1>
 			<div className='row'>
 				<div className='col-md-12 col-12'>
 					<h1 className='d-flex justify-content-center title'>Location</h1>
