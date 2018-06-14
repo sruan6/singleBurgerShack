@@ -21,10 +21,10 @@ class App extends Component {
     
 
   getScrollY = () => {
-    if (document.pageYOffset !== undefined) {
-      return document.pageYOffset
-    } else if (document.scrollTop !== undefined) {
-      return document.scrollTop
+    if (window.pageYOffset !== undefined) {
+      return window.pageYOffset
+    } else if (window.scrollTop !== undefined) {
+      return window.scrollTop
     } else {
       return (document.documentElement || document.body.parentNode || document.body).scrollTop
     }
@@ -55,11 +55,11 @@ class App extends Component {
   }
 
   componentWillUnmount() {
-    document.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   componentDidMount(){
-    document.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
     const ele = document.getElementById("loader");
     if(ele){
       setTimeout(() => {
