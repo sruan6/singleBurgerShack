@@ -85,9 +85,11 @@ navbarEvent = ()=> {
           transitionLeave={false}>
           {this.state.navbarEvent ? <Nav/> :null }
         </ReactCSSTransitionGroup>
+        <div data-spy="scroll">
           <Home />
           <Menu />
           <Location />
+        </div>
       </div>
     );
   }

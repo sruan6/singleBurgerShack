@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import Scroll from 'react-scroll-to-element';
 
 
 class Nav extends Component {
@@ -35,9 +36,15 @@ class Nav extends Component {
 
 					  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					    <div className="navbar-nav">
-					      <a onClick={this.handleclose} className="nav-item nav-link" href="#Home">Home</a>
-					      <a onClick={this.handleclose} className="nav-item nav-link" href="#Menu">Menu</a>
-					      <a onClick={this.handleclose} className="nav-item nav-link" href="#Location">Location</a>
+					      	<a onClick={this.handleclose} className="nav-item nav-link">
+					      		<Scroll type="id" element="Home">Home</Scroll>
+					      	</a>
+					      	<a onClick={this.handleclose} className="nav-item nav-link">
+					      		<Scroll type="id" element="Menu">Menu</Scroll>
+					      		</a>
+					      	<a onClick={this.handleclose} className="nav-item nav-link">
+					      	      <Scroll type="id" element="Location">Location</Scroll>
+					      	</a>
 					    </div>
 					  </div>
 					</nav>
